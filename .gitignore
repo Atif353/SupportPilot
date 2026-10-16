@@ -1,0 +1,16 @@
+node_modules
+.pnpm-store/
+dist
+coverage
+.env
+.env.local
+.DS_Store
+*.log
+test-results
+playwright-report
+.runtime-mongo/
+.runtime-mongo-dev/
+.env.*
+!.env.example
+.idea/
+.vscode/

@@ -1,0 +1,10 @@
+process.env.NODE_ENV = "test";
+process.env.GEMINI_API_KEY = "";
+process.env.KNOWLEDGE_SEARCH_MODE = "lexical";
+process.env.PORT = "4000";
+process.env.CLIENT_URL = "http://localhost:5173";
+process.env.MONGODB_URI = "mongodb://localhost:27017/supportpilot-ai-test";
+process.env.JWT_ACCESS_SECRET = "test-access-secret-with-length";
+process.env.JWT_REFRESH_SECRET = "test-refresh-secret-with-length";
+process.env.JWT_ACCESS_EXPIRES_IN = "15m";
+process.env.JWT_REFRESH_EXPIRES_IN = "7d";

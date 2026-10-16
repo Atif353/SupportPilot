@@ -1,0 +1,26 @@
+{
+  "name": "policy_chunks_vector",
+  "type": "vectorSearch",
+  "definition": {
+    "fields": [
+      {
+        "type": "vector",
+        "path": "embedding",
+        "numDimensions": 768,
+        "similarity": "cosine"
+      },
+      {
+        "type": "filter",
+        "path": "document"
+      },
+      {
+        "type": "filter",
+        "path": "published"
+      },
+      {
+        "type": "filter",
+        "path": "embeddingModel"
+      }
+    ]
+  }
+}
