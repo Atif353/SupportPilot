@@ -1,8 +1,29 @@
 # SupportPilot AI
 
+**Customer support workflows with explicit actions, traceable routing, and human handoff.**
+
+**Stack:** TypeScript · React · Express · MongoDB · LangChain · LangGraph · Gemini
+
+[Portfolio presentation](https://atifmubashar.vercel.app/work) · [Author](https://atifmubashar.vercel.app/) · [Contact](mailto:atifmubashar353@gmail.com)
+
+[![CI](https://github.com/Atif353/SupportPilot/actions/workflows/ci.yml/badge.svg)](https://github.com/Atif353/SupportPilot/actions/workflows/ci.yml)
+
+## Engineering highlights
+
+- LangGraph coordinates input checks, intent routing, specialist nodes, response generation, and output checks.
+- AI read tools are scoped to the customer. State-changing API tools require explicit confirmation; refunds go through staff approval.
+- Idempotency and audit records support order actions. Refunds are simulated; this project does not process real payments.
+- [Workflow implementation](server/src/modules/agent/graph/support.graph.ts) · [Action tools](server/src/modules/agent/tools/support.tools.ts) · [Agent documentation](docs/agents.md)
+
 SupportPilot AI is a full-stack, AI-powered customer support platform for e-commerce businesses. It combines an intelligent AI support agent, order management, customer conversations, human escalation, returns and refunds, and a knowledge base into a unified system.
 
 The platform uses **LangGraph, LangChain, and Google Gemini** to provide contextual customer support, retrieve relevant information, and automate support workflows while keeping sensitive actions under human control.
+
+## Product preview
+
+Staff review of a simulated refund using sample data:
+
+![SupportPilot staff refund approval screen](docs/screenshots/approval-review.png)
 
 ## Features
 
@@ -14,7 +35,7 @@ The platform uses **LangGraph, LangChain, and Google Gemini** to provide context
 - **Real-Time Chat:** Live conversations and streaming AI responses using Socket.IO.
 - **Role-Based Access:** Separate customer, support staff, and admin interfaces.
 - **Admin Dashboard:** Manage conversations, knowledge documents, support operations, and approvals.
-- **AI Guardrails:** Protects sensitive information and validates AI-generated responses.
+- **AI Guardrails:** Input/output checks and sensitive-data redaction.
 - **Audit Logging:** Records important customer and staff actions.
 - **Evaluation:** Includes agent testing, routing evaluations, and knowledge retrieval benchmarks.
 
@@ -125,7 +146,7 @@ All demo accounts use the password `demo-password`.
 
 **Atif Mubashar**
 
-Full Stack Developer | MERN Stack | AI & Agentic AI Development
+Full Stack Software Engineer | Backend Systems | Applied AI
 
 - [GitHub](https://github.com/Atif353)
 - [LinkedIn](https://www.linkedin.com/in/atifmubashar-dev/)
