@@ -42,17 +42,20 @@ Staff review of a simulated refund using sample data:
 ## Tech Stack
 
 **Frontend**
+
 - React 19, TypeScript, Vite
 - Tailwind CSS
 - TanStack Query
 
 **Backend**
+
 - Node.js, Express.js, TypeScript
 - MongoDB, Mongoose
 - Socket.IO
 - JWT Authentication
 
 **AI Engineering**
+
 - LangGraph
 - LangChain
 - Google Gemini
@@ -60,6 +63,7 @@ Staff review of a simulated refund using sample data:
 - AI Tool Calling and Workflow Routing
 
 **Development Tools**
+
 - pnpm Workspaces
 - Docker
 - Vitest
@@ -115,24 +119,24 @@ pnpm dev
 
 All demo accounts use the password `demo-password`.
 
-| Role | Email |
-|---|---|
+| Role     | Email                     |
+| -------- | ------------------------- |
 | Customer | customer01@novastore.demo |
 | Customer | customer02@novastore.demo |
-| Support | support@novastore.demo |
-| Admin | admin@novastore.demo |
+| Support  | support@novastore.demo    |
+| Admin    | admin@novastore.demo      |
 
 ## Available Commands
 
-| Command | Description |
-|---|---|
-| `pnpm dev` | Start frontend and backend |
-| `pnpm build` | Build the application |
-| `pnpm test` | Run automated tests |
-| `pnpm lint` | Run code quality checks |
-| `pnpm typecheck` | Check TypeScript types |
-| `pnpm e2e` | Run browser tests |
-| `pnpm eval:live` | Evaluate live AI routing |
+| Command          | Description                |
+| ---------------- | -------------------------- |
+| `pnpm dev`       | Start frontend and backend |
+| `pnpm build`     | Build the application      |
+| `pnpm test`      | Run automated tests        |
+| `pnpm lint`      | Run code quality checks    |
+| `pnpm typecheck` | Check TypeScript types     |
+| `pnpm e2e`       | Run browser tests          |
+| `pnpm eval:live` | Evaluate live AI routing   |
 
 ## Project Notes
 
